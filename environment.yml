@@ -4,8 +4,10 @@ channels:
 dependencies:
   - python=3.10
   - flask
-  - flask_sqlalchemy
-  - flask_jwt_extended
   - pymysql
   - pytest
   - flake8
+  - pip
+  - pip:
+      - flask_sqlalchemy
+      - flask_jwt_extended
