@@ -1,0 +1,11 @@
+name: flask-env
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - flask
+  - flask_sqlalchemy
+  - flask_jwt_extended
+  - pymysql
+  - pytest
+  - flake8
