@@ -10,7 +10,7 @@ users = {"admin1234": "password1213"}
 def login():
     data = request.json
     username = data.get('email1')
-    password = data.get('password12')
+    password = data.get('password123')
     if username in users and users[username] == password:
         token = create_access_token(identity=username)
         return jsonify(access_token=token), 200
