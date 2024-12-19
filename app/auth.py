@@ -4,12 +4,12 @@ from flask_jwt_extended import create_access_token, jwt_required
 auth_bp = Blueprint('auth', __name__, url_prefix='/auth')
 
 # 임시 사용자 데이터
-users = {"admin1234": "password123"}
+users = {"admin1234": "password1213"}
 
 @auth_bp.route('/login', methods=['POST'])
 def login():
     data = request.json
-    username = data.get('email')
+    username = data.get('email1')
     password = data.get('password12')
     if username in users and users[username] == password:
         token = create_access_token(identity=username)
