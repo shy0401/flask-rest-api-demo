@@ -4,7 +4,7 @@ from flask_jwt_extended import create_access_token, jwt_required
 auth_bp = Blueprint('auth', __name__, url_prefix='/auth')
 
 # 임시 사용자 데이터
-users = {"admin": "password123"}
+users = {"admin1234": "password123"}
 
 @auth_bp.route('/login', methods=['POST'])
 def login():
