@@ -9,7 +9,7 @@ users = {"admin1234": "password123"}
 @auth_bp.route('/login', methods=['POST'])
 def login():
     data = request.json
-    username = data.get('email12')
+    username = data.get('email123')
     password = data.get('password')
     if username in users and users[username] == password:
         token = create_access_token(identity=username)
